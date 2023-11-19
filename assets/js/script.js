@@ -21,15 +21,16 @@ const menu = document.querySelector(".menu-container");
 const intro = document.querySelector(".intro");
 
 window.addEventListener("scroll", stickyFunc);
+var largura = window.innerWidth;
 
 var navbar = document.querySelector(".header-container");
 
 var sticky = navbar.offsetTop;
 
-console.log(sticky);
+console.log(sticky, largura);
 
 function stickyFunc() {
-  if (window.scrollY >= sticky + 5) {
+  if (window.scrollY >= sticky + 5 && largura >= 800) {
     menu.classList.add("sticky");
     intro.style.paddingTop = "120px";
   } else {
