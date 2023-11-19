@@ -32,7 +32,6 @@ console.log(sticky, largura);
 function stickyFunc() {
   if (window.scrollY >= sticky + 5 && largura >= 800) {
     menu.classList.add("sticky");
-    intro.style.paddingTop = "120px";
   } else {
     menu.classList.remove("sticky");
   }

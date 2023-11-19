@@ -316,7 +316,7 @@ ul {
 
 @media (max-width: 600px) {
   .intro {
-    margin-top: 15px;
+    padding-top: 15px;
   }
 
   .intro-cumprimento {
