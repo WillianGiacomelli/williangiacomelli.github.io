@@ -36,6 +36,10 @@ body::-webkit-scrollbar-thumb {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   height: 2000px;
 }
@@ -319,10 +323,15 @@ ul {
     padding-top: 15px;
   }
 
+  .header-background {
+    height: 90vh;
+  }
+
   .intro-cumprimento {
+    margin-top: 40px;
     font-size: 1rem;
     line-height: 1.5; /* 116.667% */
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .intro-nome {
@@ -331,15 +340,16 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: 1; /* 108.333% */
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .intro-cargo {
     display: block;
     font-style: normal;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.2; /* 116.667% */
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .intro-texto {
@@ -347,6 +357,84 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: 1.4; /* 140% */
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.sobre {
+  margin-top: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+
+.sobre-subtitulo {
+  display: block;
+  text-align: center;
+  color: var(--cor-secundaria-1);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.sobre-titulo {
+  color: var(--cor-primaria-1);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.5; /* 58.333% */
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.sobre-texto {
+  color: #1b436c;
+  font-family: Nunito;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.288px;
+}
+
+@media (max-width: 800px) {
+  .sobre {
+    margin-top: 30px;
+  }
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sobre-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sobre-subtitulo {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .sobre-titulo {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .sobre-texto {
+    font-size: 1rem;
+    line-height: 2; /* 133.333% */
+    letter-spacing: 0.288px;
   }
 }
