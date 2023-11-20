@@ -406,9 +406,10 @@ ul {
   letter-spacing: 0.288px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .sobre {
     margin-top: 30px;
+    gap: 40px;
   }
   .sobre-grid {
     grid-template-columns: 1fr;
@@ -436,5 +437,14 @@ ul {
     font-size: 1rem;
     line-height: 2; /* 133.333% */
     letter-spacing: 0.288px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .intro {
+    margin-bottom: 60px;
+  }
+  .sobre {
+    margin-top: 60px;
   }
 }
