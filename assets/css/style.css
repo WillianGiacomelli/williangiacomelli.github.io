@@ -198,6 +198,7 @@ ul {
 
   .menu.active {
     display: block;
+    z-index: 60;
   }
 
   .menu ul {
@@ -247,6 +248,7 @@ ul {
   padding: 30px 30px;
   padding-top: 120px;
   gap: 50px;
+  z-index: -1;
 }
 
 .intro-cumprimento {
