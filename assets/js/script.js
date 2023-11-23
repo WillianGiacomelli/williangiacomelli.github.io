@@ -36,3 +36,18 @@ function stickyFunc() {
     menu.classList.remove("sticky");
   }
 }
+
+var div = document.querySelector(".intro-nome");
+var texto = "Willian Giacomelli";
+console.log(texto);
+
+function escrever(str, el) {
+  var char = str.split("").reverse();
+  var typer = setInterval(function () {
+    if (!char.length) return clearInterval(typer);
+    var next = char.pop();
+    el.innerHTML += next;
+  }, 100);
+}
+
+escrever(texto, div);
