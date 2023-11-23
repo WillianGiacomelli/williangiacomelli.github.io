@@ -1,5 +1,9 @@
 const btnMobile = document.querySelector("#barra");
 const fecharMobile = document.querySelector("#fechar");
+var largura = window.innerWidth;
+var navbar = document.querySelector(".header-container");
+var sticky = navbar.offsetTop;
+var seta = document.querySelector(".seta");
 
 function toggleMenu() {
   const nav = document.querySelector(".menu");
@@ -21,25 +25,21 @@ const menu = document.querySelector(".menu-container");
 const intro = document.querySelector(".intro");
 
 window.addEventListener("scroll", stickyFunc);
-var largura = window.innerWidth;
-
-var navbar = document.querySelector(".header-container");
-
-var sticky = navbar.offsetTop;
 
 console.log(sticky, largura);
 
 function stickyFunc() {
   if (window.scrollY >= sticky + 5 && largura >= 800) {
     menu.classList.add("sticky");
+    seta.style.display = "block";
   } else {
     menu.classList.remove("sticky");
+    seta.style.display = "none";
   }
 }
 
 var div = document.querySelector(".intro-nome");
 var texto = "Willian Giacomelli";
-console.log(texto);
 
 function escrever(str, el) {
   var char = str.split("").reverse();
@@ -47,7 +47,7 @@ function escrever(str, el) {
     if (!char.length) return clearInterval(typer);
     var next = char.pop();
     el.innerHTML += next;
-  }, 100);
+  }, 150);
 }
 
 escrever(texto, div);
