@@ -34,8 +34,6 @@ const intro = document.querySelector(".intro");
 
 window.addEventListener("scroll", stickyFunc);
 
-console.log(sticky, largura);
-
 function stickyFunc() {
   if (window.scrollY >= sticky + 5 && largura >= 800) {
     menu.classList.add("sticky");
