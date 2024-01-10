@@ -60,4 +60,3 @@ btnTopo.addEventListener("click", () => {
 });
 const div = document.querySelector(".titulo-principal");
 typeWrite(textoNome);
-typeWrite(infoTerminal);

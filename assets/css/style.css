@@ -700,6 +700,10 @@ body {
   color: #447bb2;
 }
 
+.card.maior {
+  height: 500px;
+}
+
 .linguagens-cards {
   display: flex;
   justify-content: space-between;
@@ -888,6 +892,10 @@ body {
   }
   .card {
     max-width: 300px;
+  }
+
+  .card.maior {
+    height: 600px;
   }
 }
 
