@@ -3,6 +3,7 @@ const fecharMobile = document.querySelector("#fechar");
 var largura = window.innerWidth;
 var navbar = document.querySelector(".header-container");
 var sticky = navbar.offsetTop;
+var btnTopo = document.querySelector("#topo");
 var seta = document.querySelector(".seta");
 var textoNome = document.querySelector(".intro-nome");
 var introInformacoes = document.querySelector(".intro-informacoes");
@@ -53,6 +54,10 @@ function typeWrite(elemento) {
     }, 100 * i);
   });
 }
+
+btnTopo.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 const div = document.querySelector(".titulo-principal");
 typeWrite(textoNome);
 typeWrite(infoTerminal);
